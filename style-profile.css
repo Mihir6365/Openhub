@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #292833;
+    color: white;
+}
+
+.container {
+    padding: 10px 80px;
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    width: auto;
+}
+
+.blocks {
+    background: #1D1C22;
+    border-radius: 20px;
+
+}
+
+#header {
+    margin-bottom: 10px;
+    height: 7%;
+}
+
+#user-info {
+    margin-bottom: 10px;
+    height: 25%;
+}
+
+#showcase {
+    background: #292833;
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+}
+
+.skill-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+    width: 30%;
+}
+
+#skills {
+    margin-right: 10px;
+    height: 50%;
+    width: auto;
+}
+
+#links {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 50%;
+}
+
+#projects {
+    width: 70%;
+}
+
+/* header */
+#header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo {
+    width: 2em;
+    height: 2em;
+}
+
+.app-name {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.OpenHub {
+    margin-left: 10px;
+}
+
+.OpenHub,
+.hub {
+    font-weight: 750;
+    font-size: 1.7em;
+    color: white;
+}
+
+.hub {
+    background: -webkit-linear-gradient(right, #5C86FF, #AC5BFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-btns ul {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.nav-items {
+    list-style: none;
+    margin: 20px;
+}
+
+#home,
+#signup,
+#login {
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 3em;
+}
+
+.gradient-fill {
+    background: -webkit-linear-gradient(right, #5C86FF, #AC5BFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+/* HEADER HOVERS */
+.nav-items:hover{
+    cursor: pointer;
+    background: -webkit-linear-gradient(right, #5C86FF, #AC5BFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.gradient-fill:hover{
+    border: none;
+    transform: scale(1.08);
+}
+
+/* Userinfo */
+.user-img{
+    background:#5C86FF;
+    height: 10em;
+    width: 10em;
+    margin: 0px 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #AC5BFF;
+}
+
+.pfp-img{
+    height: 10em;
+    width: auto;
+}
+#user-info{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-name-desc{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    position: relative;
+}
+
+.big-name{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.desc{
+    margin-top: -20px;
+    font-weight: 100;
+}
+
+.buttons{
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contro-points{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+.user-contribution,.user-points{
+    width: 11em;
+    margin-right: 2em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid #5C86FF;
+    padding: 0 10px; 
+    overflow: hidden;
+}
+
+.num{
+    position: absolute;
+    right: 0px;
+    background:#AC5BFF;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.user-message{
+    background: #5C86FF;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    height: 40px;
+    border: none;
+}
+
+/* Hover settings */
+.user-message:hover{
+    cursor: pointer;
+    background:#AC5BFF;
+    color: black;
+}
+
+
+/* skills */
+.skill-content{
+    margin: 20px 0;
+}
+.skill-heading{
+    font-weight: 700;
+    margin-left: 10px;
+
+}
+
+.skill-list{
+    list-style: circle;
+    padding: 10px 0;
+}
+.skill-list:hover{
+    background: -webkit-linear-gradient(right, #5C86FF, #AC5BFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.skill-name{
+    margin: 0;
+    margin-left: 10px;
+}
+.skill-bar{
+    background: white;
+    width: 90%;
+    height: 10px;
+    margin-left: 10px;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+.skill-level{
+    width: 70%;
+    background:#5C86FF;
+    height: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* links */
+
+.link-heading{
+    font-weight: 700;
+    margin-left: 10px;
+}
+.social{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.social a{
+    text-decoration: none;
+    color: inherit;
+}
+.link-com{
+    display: flex;
+    align-items: center;
+    margin-left:10px ;
+    margin-bottom: 25px;
+}
+
+.link-com img{
+    padding-right: 5px;
+    filter: invert(1);
+}
+
+.link-com:hover{
+    font-weight: 700;
+    background: -webkit-linear-gradient(right, #5C86FF, #AC5BFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Projects Contributed */
+
+#projects{
+    padding: 0 10px;
+    overflow: scroll;
+    max-height: 1000px;
+}
+/* width */
+#projects::-webkit-scrollbar {
+  width: 10px;
+}
+
+#projects::-webkit-scrollbar-thumb {
+    background: #5C86FF; 
+    border-radius: 10px;
+}
+#projects::-webkit-scrollbar-thumb:hover {
+    background: #304ea7; 
+}
+
+.project-card{
+    background: #111111;
+    border-radius: 10px;
+    padding: 1px;
+    padding-left: 10px; 
+    margin: 10px 0;   
+}
+.proj-title{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.proj-desc{
+    font-weight: normal;
+    font-size: .8em;
+}
